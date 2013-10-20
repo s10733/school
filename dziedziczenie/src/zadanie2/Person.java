@@ -5,7 +5,7 @@ package zadanie2;
 	protected String name;
 	protected String surname;
 	protected String sex;
-	protected int data;
+	protected String date;
  
  	public final String show(){
  		
@@ -13,7 +13,7 @@ package zadanie2;
  		details="Name:"+this.name;
  		details="Surname"+this.surname;
  		details="sex"+this.sex;
- 		details="data"+this.data;
+ 		details="data"+this.date;
  		details+=showDetails();
  		
  		return details;
@@ -41,12 +41,19 @@ package zadanie2;
  		this.surname= surname;
  	}
  	
- 	public String setSex(){
- 	 		return sex;
+ 	public void setSex(String sex){
+ 	 		 this.sex= sex;
  	}
  	
- 	public int getDate(){
- 		return data;
+ 	public String getSex(){
+ 		return sex;
+ 	}
+ 	
+ 	public void setDate(String date){
+ 		this.date = date ;
+ 	}
+ 	public String getDate(){
+ 		return date;
  	}
  	
  	 		
